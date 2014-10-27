@@ -1,0 +1,2 @@
+module HifivesHelper
+end

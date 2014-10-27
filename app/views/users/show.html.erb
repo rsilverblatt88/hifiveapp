@@ -1,0 +1,27 @@
+<div class="profile">
+  <p id="notice"><%= notice %></p>
+  <h1>Name: <%= @user.name %></h1>
+  <img src=<%=@user.image %> alt="" height= "200" width="200">
+</div>
+
+<div class="all-users">
+  <h1>Fellow Hi 5ivers</h1>
+  <% @users.each do |user| %>
+    <span>
+      <%= user.name %>
+      <%= link_to 'Send hi5', user, "id" => "send-hi5", "onclick" => "div_show()" %></br>
+    </span>
+  <% end %>
+</div>
+
+<div class="hi-fives">
+  <% @hifives.each do |hifive| %>
+  <span>
+    <%= hifive.from %>
+    <%= hifive.message %> </br>
+  </span>
+  <% end %>
+</div>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
