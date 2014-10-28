@@ -10,15 +10,18 @@ class HifivesController < ApplicationController
   end
 
   def new
-    @hifive = User.new
+    @user_id = session[:user_id]
+    @hifive = Hifive.new
   end
 
   def edit
-    @hifive = User.find(params[:id])
+    @hifive = Hifive.find(params[:id])
   end
 
   def create
     Hifive.create(hifive_params)
+    hi5(hifive_params["phone"], hifive_params["to"], hifive_params["message"])
+    redirect_to user_path(session[:user_id])
   end
 
 
@@ -31,8 +34,8 @@ class HifivesController < ApplicationController
       :from,
       :phone,
       :message
-
       )
   end
+
 
 end

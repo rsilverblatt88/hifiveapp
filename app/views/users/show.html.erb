@@ -2,6 +2,8 @@
   <p id="notice"><%= notice %></p>
   <h1>Name: <%= @user.name %></h1>
   <img src=<%=@user.image %> alt="" height= "200" width="200">
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
 </div>
 
 <div class="all-users">
@@ -9,9 +11,13 @@
   <% @users.each do |user| %>
     <span>
       <%= user.name %>
-      <%= link_to 'Send hi5', user, "id" => "send-hi5", "onclick" => "div_show()" %></br>
+      <%= link_to 'Send hi5', new_hifife_path, "class" => "send-hi5" %></br>
     </span>
   <% end %>
+</div>
+
+<div id="new-form">
+  <h1>TEST LOCATION</h1>
 </div>
 
 <div class="hi-fives">
@@ -22,6 +28,9 @@
   </span>
   <% end %>
 </div>
+</br>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+
+<script>
+  $(document).ready(users.show)
+</script>
