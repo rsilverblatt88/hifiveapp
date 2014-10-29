@@ -2,23 +2,62 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
-div.all-users{
-  position: absolute;
-  border: 2px solid black;
-  width: 150px;
-  height: 300px;
+
+div.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: lightgreen;
+  opacity: 0.85;
 }
 
-div.hi-fives{
-  position: relative;
-  float: right;
-  padding-right: 40%;
+div.profile {
+  width: 25%;
+  display: inline-block;
+  height: 45%;
+}
+
+div.row {
+  display: inline-block;
+  width: 100%;
+}
+
+div.all-users {
+  float: left;
+  border: 5px solid black;
+  padding: 10px;
+  width: 25%;
+  height: 300px;
+  margin: 2em;
+}
+
+div.hi-fives {
+  float: left;
   border: 5px solid black;
   height: 400px;
-  width: 350px;
+  width: 43%;
+  white-space: nowrap;
+  padding-left: 2em;
 }
 
-div#new-form{
-  position: absolute;
-  padding-left: 15%;
+div#new-form {
+  float: left;
+  padding: 0;
+  padding-left: 3em;
+  width: 25%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
 }
