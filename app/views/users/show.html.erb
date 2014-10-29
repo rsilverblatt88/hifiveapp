@@ -12,11 +12,13 @@
     <div class="all-users">
       <h1>Fellow Hi 5ivers</h1>
       <% @users.each do |user| %>
+      <div class="user-buttons">
         <span>
-          <%= user.name %>
+          <p><%= user.name %></p>
           <%#= link_to 'Send hi5', new_hifife_path + "?phone=" + user.phone.to_s ,  :class => "send-hi5"  %>
-          <button data-user-id="<%= user.id %>" data-user-phone="<%= user.phone %>" class="send-hi5">Send hi5</button></br>
+          <button type="button" class="btn btn-default btn-lg send-hi5" data-user-id="<%= user.id %>" data-user-phone="<%= user.phone %>"><span class="glyphicon glyphicon-thumbs-up"></span></button></br>
         </span>
+      </div>
       <% end %>
     </div>
 

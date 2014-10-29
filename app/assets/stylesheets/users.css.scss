@@ -28,14 +28,22 @@ div.all-users {
   border: 5px solid black;
   padding: 10px;
   width: 25%;
-  height: 300px;
   margin: 2em;
+}
+
+.all-users p {
+  display: inline-block;
+  padding-right: 10px;
+  width: 50px;
+}
+
+.all-users .user-buttons{
+  margin-bottom: 10px;
 }
 
 div.hi-fives {
   float: left;
   border: 5px solid black;
-  height: 400px;
   width: 43%;
   white-space: nowrap;
   padding-left: 2em;

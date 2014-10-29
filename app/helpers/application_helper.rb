@@ -13,7 +13,7 @@
       client.account.messages.create(
       :from => from,
       :to => key,
-      :body => "#{message}"
+      :body => "#{name} has just sent you a Hi 5ive for " + "#{message}"
       )
       puts "Sent message to #{name}"
     end
