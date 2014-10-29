@@ -17,7 +17,7 @@ User.create(name: "Larkin", email: "larkinm2@gmail.com", user: "LurkinLarkin", p
 
 
 
-User.create(name: "Larkin", email: "larkinm2@gmail.com", user: "LurkinLarkin", phone: "7185095377", role: "student", image: "http://www.salisburysd.us/brinson/wp-content/uploads/2014/03/free-vector-stick-figure-clip-art_105575_Stick_Figure_clip_art_hight.png", password: "123", password_confirmation: "123")
+User.create(name: "Jenny", email: "jennynguyen622@gmail.com", user: "Jennny", phone: "6465155090", role: "student", image: "http://www.salisburysd.us/brinson/wp-content/uploads/2014/03/free-vector-stick-figure-clip-art_105575_Stick_Figure_clip_art_hight.png", password: "123", password_confirmation: "123")
 User.create(name: "Larkin", email: "larkinm2@gmail.com", user: "LurkinLarkin", phone: "7185095377", role: "student", image: "http://www.salisburysd.us/brinson/wp-content/uploads/2014/03/free-vector-stick-figure-clip-art_105575_Stick_Figure_clip_art_hight.png", password: "123", password_confirmation: "123")
 User.create(name: "Larkin", email: "larkinm2@gmail.com", user: "LurkinLarkin", phone: "7185095377", role: "student", image: "http://www.salisburysd.us/brinson/wp-content/uploads/2014/03/free-vector-stick-figure-clip-art_105575_Stick_Figure_clip_art_hight.png", password: "123", password_confirmation: "123")
 User.create(name: "Larkin", email: "larkinm2@gmail.com", user: "LurkinLarkin", phone: "7185095377", role: "student", image: "http://www.salisburysd.us/brinson/wp-content/uploads/2014/03/free-vector-stick-figure-clip-art_105575_Stick_Figure_clip_art_hight.png", password: "123", password_confirmation: "123")

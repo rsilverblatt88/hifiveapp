@@ -1,5 +1,4 @@
 class HifivesController < ApplicationController
-
 # GET /hifives
   def index
     @hifives = Hifive.all
@@ -10,8 +9,10 @@ class HifivesController < ApplicationController
   end
 
   def new
+    # binding.pry
     @user_id = session[:user_id]
     @hifive = Hifive.new
+    render :new, :layout => false
   end
 
   def edit

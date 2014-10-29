@@ -119,7 +119,7 @@ body {
 .loginContainer {
   position: relative;
   margin: 0 auto;
-  padding: 20px 20px 20px;
+  padding: 70px 20px 20px;
   width: 330px;
   background: white;
   border-radius: 3px;
@@ -269,4 +269,21 @@ input[type=submit]:active {
 
 .lt-ie9 input[type=text], .lt-ie9 input[type=password] {
   line-height: 34px;
+}
+
+
+/* My CSS*/
+
+.login-container {
+  padding-top: 10%;
+}
+
+body {
+  background-image: url("http://2.bp.blogspot.com/-wNdJYtHzXNw/UBy02JiOqvI/AAAAAAAAAFY/Yy77bTDcaU0/s1600/1600_199.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  padding-top: 15%;
 }

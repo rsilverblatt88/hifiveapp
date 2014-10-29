@@ -4,19 +4,32 @@
 var users = {}
 
 users.show = function(){
-  $("#new-form").hide();
+  var $newForm = $("#new-form");
+  $newForm.hide();
     // code to run on users/:id when it loads
   $(".send-hi5").on('click', function(e){
     e.preventDefault();
-    $("#new-form").load("/hifives/new", function(){
-      $("#new-form").fadeToggle();
+    var userId    = $(this).data('userId');
+    var userPhone = $(this).data('userPhone');
+
+    console.log('clicked for new hi5', userId, userPhone);
+
+    // $newForm.show();
+    $newForm.load("/hifives/new", function(){
+      // set the input field's value
+      $newForm.find("#hifive_phone").val(userPhone);
+      // create hidden tags
+      $hiddenTag = $("<input type='hidden'>").attr('name', 'user-id')
+                                             .val(userId);
+      $newForm.append($hiddenTag);
+      $newForm.fadeToggle();
     });
+  });
+}
     // $.ajax({
-    //   url: "/highfives/new",
-    //   type: "GET",
+    //   url:      "/highfives/new",
+    //   type:     "GET",
     //   dataType: "html"
     // }).done(function(data){
     //   $("#new-form").html(data);
     // })
-  });
-}

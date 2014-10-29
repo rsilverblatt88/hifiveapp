@@ -1,7 +1,7 @@
 <div class="container">
     <div class="profile">
       <p id="notice"><%= notice %></p>
-      <h1>Name: <%= @user.name %></h1>
+      <h1>Welcome <%= @user.name %>!</h1>
       <img src=<%=@user.image %> alt="" height= "200" width="200"></br>
     <%= link_to 'Edit', edit_user_path(@user) %> |
     <%= link_to 'Back', users_path %>
@@ -14,7 +14,8 @@
       <% @users.each do |user| %>
         <span>
           <%= user.name %>
-          <%= link_to 'Send hi5', new_hifife_path,  :class => "send-hi5"  %></br>
+          <%#= link_to 'Send hi5', new_hifife_path + "?phone=" + user.phone.to_s ,  :class => "send-hi5"  %>
+          <button data-user-id="<%= user.id %>" data-user-phone="<%= user.phone %>" class="send-hi5">Send hi5</button></br>
         </span>
       <% end %>
     </div>
