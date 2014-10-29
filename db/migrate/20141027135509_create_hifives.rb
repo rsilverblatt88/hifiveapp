@@ -4,7 +4,7 @@ class CreateHifives < ActiveRecord::Migration
       t.references :user, index: true
       t.string :to
       t.string :from
-      t.integer :phone
+      t.string :phone
       t.string :message
 
       t.timestamps
