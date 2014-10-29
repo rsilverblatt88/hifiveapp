@@ -11,6 +11,7 @@ users.show = function(){
     e.preventDefault();
     var userId    = $(this).data('userId');
     var userPhone = $(this).data('userPhone');
+    console.log(this);
 
     console.log('clicked for new hi5', userId, userPhone);
 
@@ -19,9 +20,9 @@ users.show = function(){
       // set the input field's value
       $newForm.find("#hifive_phone").val(userPhone);
       // create hidden tags
-      $hiddenTag = $("<input type='hidden'>").attr('name', 'user-id')
-                                             .val(userId);
-      $newForm.append($hiddenTag);
+      // $hiddenTag = $("<input type='hidden'>").attr('name', 'user-id')
+      //                                        .val(userId);
+      // $newForm.append($hiddenTag);
       $newForm.fadeToggle();
     });
   });

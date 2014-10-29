@@ -8,4 +8,8 @@ class WelcomeController < ApplicationController
   #   #   redirect_to (login_path)
   #   end
   # end
+
+  def index
+    redirect_to(login_path)
+  end
 end

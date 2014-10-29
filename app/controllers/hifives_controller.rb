@@ -9,7 +9,7 @@ class HifivesController < ApplicationController
   end
 
   def new
-    # binding.pry
+    binding.pry
     @user_id = session[:user_id]
     @hifive = Hifive.new
     render :new, :layout => false
@@ -21,7 +21,7 @@ class HifivesController < ApplicationController
 
   def create
     Hifive.create(hifive_params)
-    hi5(hifive_params["phone"], hifive_params["to"], hifive_params["message"])
+    hi5(hifive_params["phone"], hifive_params["from"], hifive_params["message"])
     redirect_to user_path(session[:user_id])
   end
 

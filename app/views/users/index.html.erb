@@ -1,4 +1,4 @@
-<h1>Listing users</h1>
+</br><h1>Listing users</h1>
 
 <table>
   <thead>
@@ -7,19 +7,20 @@
     </tr>
   </thead>
 
+<%= link_to 'New User', new_user_path %>
   <tbody>
-    <% @users.each do |user| %>
-
+    <div class="all-user">
+      <% @users.each do |user| %>
         <span>
           <h1><%= user.name %></h1>
           <%= link_to 'Show', user %>
           <%= link_to 'Edit', edit_user_path(user) %>
           <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
         </span>
-    <% end %>
+      <% end %>
+    </div>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
