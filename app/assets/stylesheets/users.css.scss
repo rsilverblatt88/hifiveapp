@@ -48,7 +48,7 @@ div.hi-fives {
   width: 43%;
   white-space: nowrap;
   padding-left: 2em;
-  background-color: rgba(191, 162, 2, 0.25);
+  background-color: rgba(191, 162, 2, 0.45);
 }
 
 div#new-form {
@@ -77,4 +77,9 @@ div.hi5-form  {
   border: 5px solid black;
   width: 94%;
   padding: 10px;
+}
+
+div.all-user{
+  background-color: rgba(195, 28, 28, 0.82);
+  width: 20%;
 }

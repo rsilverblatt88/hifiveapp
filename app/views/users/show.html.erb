@@ -10,7 +10,7 @@
   <div class="row clearfix">
 
     <div class="all-users">
-      <h1>Fellow Hi 5ivers</h1>
+      <h1>Classmates</h1>
       <% @users.each do |user| %>
       <div class="user-buttons">
         <span>
@@ -29,7 +29,7 @@
       <h1>Unique Hi 5s this Week: <%= @hifives.length %></h1>
        <% @hifives.each do |hifive| %>
         <span>
-          <%= hifive.from %>
+          <h1><%= hifive.from %></h1>
           <%= hifive.message %> </br>
         </span>
       <% end %>
