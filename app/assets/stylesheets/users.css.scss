@@ -8,7 +8,7 @@ div.container {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: lightgreen;
+  background-color: rgba(197, 219, 197, 0.73);
   opacity: 0.85;
 }
 
@@ -29,6 +29,7 @@ div.all-users {
   padding: 10px;
   width: 25%;
   margin: 2em;
+  background-color: rgba(160, 208, 151, 0.88);
 }
 
 .all-users p {
@@ -47,6 +48,7 @@ div.hi-fives {
   width: 43%;
   white-space: nowrap;
   padding-left: 2em;
+  background-color: rgba(191, 162, 2, 0.25);
 }
 
 div#new-form {
@@ -68,4 +70,11 @@ div#new-form {
 
 .clearfix {
   *zoom: 1;
+}
+
+div.hi5-form  {
+  background-color: #8484e3;
+  border: 5px solid black;
+  width: 50%;
+  padding: 34px;
 }
