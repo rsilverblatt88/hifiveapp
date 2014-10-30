@@ -114,6 +114,7 @@ body {
 .container {
   margin: 80px auto;
   width: 640px;
+  padding-top: 2%;
 }
 
 .loginContainer {

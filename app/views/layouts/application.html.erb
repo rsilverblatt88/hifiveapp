@@ -14,7 +14,7 @@
   <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <ul class="nav pull-left navbar-nav", style="font-size: 25px; font-family: 'Oleo Script Swash Caps', cursive;">
+    <ul class="nav pull-left navbar-inverse navbar-nav navbar-fixed-top", style="font-size: 25px; font-family: 'Oleo Script Swash Caps', cursive;">
       <% if session[:user_id] %>
         <li class="login"><%= link_to 'Hi 5ive', user_path(session[:user_id]), class: 'logo' %></li>
       <% else %>
