@@ -16,7 +16,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    binding.pry
     @users = User.where.not(id: params[:id])
     @user = User.find(params[:id])
     @hifives = Hifive.where(phone: @user.phone)
