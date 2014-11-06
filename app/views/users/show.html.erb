@@ -3,6 +3,7 @@
       <p id="notice"><%= notice %></p>
       <h1>Welcome <%= @user.name %>!</h1>
       <img src=<%=@user.image %> alt="" height= "200" width="200"></br>
+      <p><a href = "mailto:<%= @user.email %> "><%= @user.email %> </a></p>
     <%= link_to 'Edit', edit_user_path(@user) %> |
     <%= link_to 'Back', users_path %>
     </div>
@@ -10,13 +11,14 @@
   <div class="row clearfix">
 
     <div class="all-users">
-      <h1>Classmates</h1>
+      <h1>WDI August - 2014</h1><button type="button">Send New Hi 5ive</button>
       <% @users.each do |user| %>
       <div class="user-buttons">
         <span>
           <p><%= user.name %></p>
           <%#= link_to 'Send hi5', new_hifife_path + "?phone=" + user.phone.to_s ,  :class => "send-hi5"  %>
-          <button type="button" class="btn btn-default btn-lg send-hi5" data-user-id="<%= user.id %>" data-user-phone="<%= user.phone %>"><span class="glyphicon glyphicon-thumbs-up"></span></button></br>
+          <button type="button" class="btn btn-default btn-lg send-hi5" data-user-id="<%= user.id %>" data-user-phone="<%= user.phone %>" data-user-name="<%= user.name %>" data-my-name="<%= @user.name %>"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+          Hi-5ives: <%= Hifive.where(phone: User.find_by(id: user.id).phone).length %>
         </span>
       </div>
       <% end %>

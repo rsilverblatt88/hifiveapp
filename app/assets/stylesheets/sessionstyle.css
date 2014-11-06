@@ -109,6 +109,7 @@ body {
   font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040  ;
   background: #0ca3d2  ;
+  height: 100%;
 }
 
 .container {
@@ -126,7 +127,9 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
-    opacity: .85;
+  opacity: .85;
+  margin-bottom: 10%;
+
 }
 .loginContainer:before {
   content: '';
@@ -281,12 +284,29 @@ input[type=submit]:active {
 
 }
 
-body {
+header {
   background-image: url("http://2.bp.blogspot.com/-wNdJYtHzXNw/UBy02JiOqvI/AAAAAAAAAFY/Yy77bTDcaU0/s1600/1600_199.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 form {
   padding-top: 15%;
+}
+
+
+#box {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+}
+
+#box2{
+  height: 815px;
+  width: 100%;
+  background-color: blue;
+  opacity: .75;
 }

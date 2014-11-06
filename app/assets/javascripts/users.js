@@ -11,6 +11,8 @@ users.show = function(){
     e.preventDefault();
     var userId    = $(this).data('userId');
     var userPhone = $(this).data('userPhone');
+    var userName  = $(this).data('userName');
+    var myName    = $(this).data('myName');
     console.log(this);
 
     console.log('clicked for new hi5', userId, userPhone);
@@ -19,6 +21,8 @@ users.show = function(){
     $newForm.load("/hifives/new", function(){
       // set the input field's value
       $newForm.find("#hifive_phone").val(userPhone);
+      $('#hifive_to').val(userName);
+      $('#hifive_from').val(myName);
       // create hidden tags
       // $hiddenTag = $("<input type='hidden'>").attr('name', 'user-id')
       //                                        .val(userId);
