@@ -16,15 +16,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-<<<<<<< HEAD
     @users    = User.where.not(id: params[:id])
     @user     = User.find(params[:id])
     @hifives  = Hifive.where(phone: @user.phone)
-=======
-    @users = User.where.not(id: params[:id])
-    @user = User.find(params[:id])
-    @hifives = Hifive.where(phone: @user.phone)
->>>>>>> e987939fb8b252ed0251361aee4ab0c15775c503
   end
 
   # GET /users/new

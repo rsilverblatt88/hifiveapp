@@ -14,6 +14,10 @@ class HifivesController < ApplicationController
     render :new, :layout => false
   end
 
+  def unique
+    @hifive = Hifive.new
+  end
+
   def edit
     @hifive = Hifive.find(params[:id])
   end

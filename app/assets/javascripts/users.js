@@ -8,7 +8,19 @@ users.show = function(){
   var $newForm = $("#new-form");
   // this hides the div so it will appear when we call an event on it later.
   $newForm.hide();
-    // code to run on users/:id when it loads
+  // code to run on users/:id when it loads
+
+  // Send a brand new Hi5 to anyone
+  $('#new-hi5-form').on('click', function(e){
+    e.preventDefault();
+
+    $newForm.load("/hifive/unique", function(){
+      $newForm.fadeToggle();
+    });
+  });
+
+
+  // Send unique hi 5 which contains the classmates information
   $(".send-hi5").on('click', function(e){
     e.preventDefault();
     // this grabs the data which is specific to each user and is passed through the data
@@ -16,22 +28,13 @@ users.show = function(){
     var userPhone = $(this).data('userPhone');
     var userName  = $(this).data('userName');
     var myName    = $(this).data('myName');
-    console.log(this);
-
-    console.log('clicked for new hi5', userId, userPhone);
-
     // $newForm.show();
     $newForm.load("/hifives/new", function(){
       // set the input field's value
       $newForm.find("#hifive_phone").val(userPhone);
-      $('#hifive_to').val(userName);
-      $('#hifive_from').val(myName);
-      // create hidden tags
-      // $hiddenTag = $("<input type='hidden'>").attr('name', 'user-id')
-      //                                        .val(userId);
-      // $newForm.append($hiddenTag);
-      // $newForm.fadeToggle();
-      $newForm.modal('hide');
+      $newForm.find('#hifive_to').val(userName);
+      $newForm.find('#hifive_from').val(myName);
+      $newForm.fadeToggle();
     });
   });
 }
