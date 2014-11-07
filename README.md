@@ -1,5 +1,7 @@
 # Hi5ive App
 
+## Hi5ive is a app used to promote encouragement inside of the classroom by sending classmates "Virtual" Hi5ives.
+
 
 
 
