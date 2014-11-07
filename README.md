@@ -2,7 +2,7 @@
 
  **Hi5ive** is a app used to promote encouragement inside of the classroom by sending classmates *"Virtual"* Hi5ives.
 
-**WDI Guildenstern** - Final Project -
+**WDI Guildenstern** - Final Project
 
 **Developed by:** Robert Yu Silverblatt
 
