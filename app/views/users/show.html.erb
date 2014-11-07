@@ -1,4 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Login Form</title>
+    <%= stylesheet_link_tag    'users' %>
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+<body>
+
+
 <div class="container">
+
+  <div class="row bump">
+   <div class="small-12 large-6 columns">
+      <div class="row">
+         <div class="profile-card">
+            <div class="small-12 large-4 columns">
+               <a href="https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg">
+                  <img src=<%=@user.image %> alt="profile image" height="100" width="100"> </a>
+            </div>
+            <div class="small-12 large-8 columns">
+               <h4><%= @user.name %> <span><%= @user.role.capitalize %></span></h4>
+               <p><i class="fi-mail"></i><span><a href = "mailto:<%= @user.email %> "><%= @user.email %> </a></span></p>
+            </div>
+            <div class="row collapse">
+               <ul class="button-group even-3">
+                  <li><a href="#" class="button"> Total Hi5ives <span><%= @hifives.length %></span></a></li>
+                  <li><a href="#" class="button"> Hi5ives Sent <span>432 </span></a></li>
+                  <li><a href="#" class="button"> Views <span>432 </span></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
     <div class="profile">
       <p id="notice"><%= notice %></p>
       <h1>Welcome <%= @user.name %>!</h1>
@@ -41,6 +78,8 @@
 </div>
 
 
-<script>
-  $(document).ready(users.show)
-</script>
+    <script>
+      $(document).ready(users.show)
+    </script>
+  </body>
+</html>

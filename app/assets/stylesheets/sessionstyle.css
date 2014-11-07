@@ -105,13 +105,6 @@ table {
 * Licensed under the MIT License:
 * http://www.opensource.org/licenses/mit-license.php
 */
-body {
-  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  color: #404040  ;
-  background: #0ca3d2  ;
-  height: 100%;
-}
-
 .container {
   margin: 80px auto;
   width: 640px;
@@ -278,18 +271,18 @@ input[type=submit]:active {
 
 
 /* My CSS*/
-
-.login-container {
-  padding-top: 10%;
-
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+/*  color: #404040  ;
+  background: #0ca3d2;*/
 }
 
-header {
-  background-image: url("http://2.bp.blogspot.com/-wNdJYtHzXNw/UBy02JiOqvI/AAAAAAAAAFY/Yy77bTDcaU0/s1600/1600_199.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+section.login-container {
   width: 100%;
+  height: 4000px;
+  background-color: blue;
+  top: 0;
+  left: 0;
   position: fixed;
 }
 
@@ -298,15 +291,15 @@ form {
 }
 
 
-#box {
+/*#box {
   height: 1000px;
   width: 100%;
   background-color: white;
-}
+}*/
 
-#box2{
+/*#box2{
   height: 815px;
   width: 100%;
   background-color: blue;
   opacity: .75;
-}
+}*/

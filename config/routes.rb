@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/login" => "sessions#new"
 
   get "/hifive/unique" => "hifives#unique"
+
   resource  :session, only: [:create, :destroy]
 
   resources :users
