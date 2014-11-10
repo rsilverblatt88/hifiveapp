@@ -24,9 +24,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 
 ol, ul {
   list-style: none;
@@ -105,17 +102,12 @@ table {
 * Licensed under the MIT License:
 * http://www.opensource.org/licenses/mit-license.php
 */
-.container {
-  margin: 80px auto;
-  width: 640px;
-  padding-top: 2%;
-}
 
 .loginContainer {
   position: relative;
   margin: 0 auto;
   padding: 130px;
-  width: 50%;
+  width: 30%;
   background: white;
   border-radius: 12px;
   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -270,36 +262,108 @@ input[type=submit]:active {
 }
 
 
-/* My CSS*/
-body {
-  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
-/*  color: #404040  ;
-  background: #0ca3d2;*/
+
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+.omb_login {
+  margin-left: 25%;
+  height: 820px;
 }
 
-section.login-container {
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+
+.omb_login .omb_loginOr {
+  position: relative;
+  font-size: 1.5em;
+  color: #aaa;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -0.6em;
+  margin-left: -1.5em;
+  background-color: white;
+  width: 3em;
+  text-align: center;
+}
+
+.omb_login .omb_loginForm .input-group.i {
+  width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+        margin-top:10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* My CSS*/
+body {
+  line-height: 1;
   width: 100%;
-  height: 4000px;
-  background-color: blue;
-  top: 0;
-  left: 0;
-  position: fixed;
+  height: 100%;
+  font: 12px/15px 'Lucida Grande', Tahoma, Verdana, sans-serif;
 }
 
 form {
   padding-top: 15%;
 }
-
-
-/*#box {
-  height: 1000px;
+.container {
+  background: url("http://jakewhill.files.wordpress.com/2013/06/img_6297.jpg") no-repeat center center fixed;
+  margin: 0 auto;
+  padding-top: 5%;
   width: 100%;
-  background-color: white;
-}*/
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-/*#box2{
-  height: 815px;
-  width: 100%;
-  background-color: blue;
-  opacity: .75;
-}*/
+}
+
+#box {
+width: 100%;
+height: 800px;
+position: relative;
+background: white;
+opacity: .75;
+z-index: 1;
+-webkit-box-shadow: rgba(35,35,50,0.8) 0px 0px 11px -2px;
+-moz-box-shadow: rgba(35,35,50,0.8) 0px 0px 11px -2px;
+box-shadow: rgba(35,35,50,0.8) 0px 0px 11px -2px;
+}

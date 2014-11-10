@@ -2,20 +2,16 @@
 
   <div class="hi5-form">
     <div class="field">
-      <%= f.label :recipient %><br>
-      <%=f.text_field :to %><br>
+      <%=f.text_field :to, class: "form-styling", :placeholder => "recipient" %><br>
     </div>
     <div class="field">
-      <%= f.label :from %><br>
-      <%=f.text_field :from %><br>
+      <%=f.text_field :from, class: "form-styling", :placeholder => "from"  %><br>
     </div>
     <div class="field">
-      <%= f.label :phone %><br>
-      <%=f.text_field :phone %><br>
+      <%=f.text_field :phone, class: "form-styling", :placeholder => "phone"  %><br>
     </div>
     <div class="field">
-      <%= f.label :message %><br>
-      <%=f.text_field :message %><br>
+      <%=f.text_field :message, class: "form-styling", :placeholder => "message"  %><br>
     </div>
     <div class="field">
     <%= f.hidden_field(:user_id, :value => @user_id) %>

@@ -54,6 +54,7 @@ ul, ol {
   width: 100%;
   height: 220px;
   text-align: center;
+  background-color: #1ebaa4;
   }
 
 .img-container a {
@@ -163,6 +164,7 @@ div.container {
   background-color: rgba(197, 219, 197, 0.73);
   opacity: 0.85;
   padding-top: 50px;
+  background-color: #FDFDFD;
 }
 
 div.row {
@@ -176,7 +178,12 @@ div.all-users {
   padding: 10px;
   width: 25%;
   margin: 2em;
-  background-color: rgba(160, 208, 151, 0.88);
+  background-color: #1ebaa4;
+  transition: background-color .5s ease;
+}
+
+.all-users:hover {
+  background-color: white;
 }
 
 .all-users p {
@@ -195,7 +202,7 @@ div.hi-fives {
   width: 43%;
   white-space: nowrap;
   padding-left: 2em;
-  background-color: rgba(191, 162, 2, 0.45);
+  background-color: #1ebaa4;
   margin-top: 27px;
 }
 
@@ -221,11 +228,11 @@ div#new-form {
 }
 
 div.hi5-form  {
-  background-color: #8484e3;
+  background-color: #1ebaa4;
   border: 5px solid black;
   width: 94%;
   padding: 10px;
-  margin-top: -37px;
+  margin-top: 28px;
   margin-left: -27px;
   text-align: center;
 }
@@ -318,3 +325,56 @@ div.all-user{
   }
 }
 
+
+input[name="commit"], #new-hi5-form{
+margin-top: 2em;
+border: 5px solid black;
+padding: 1em 2em;
+font-size: 1.2em;
+background: #83DBB8;
+color: black;
+transition: background-color .5s ease;
+text-align: center;
+}
+#new-hi5-form{
+  margin-bottom: 2em;
+}
+
+
+input[name="commit"]:hover, #new-hi5-form:hover {
+  background-color: white;
+  color: red;
+}
+
+.form-styling {
+  outline: 0;
+  border: none;
+  background: #1ebaa4;
+  padding: .5em;
+  border-bottom: 5px solid black;
+  color: black;
+}
+
+.profile {
+  height: 350px;
+  position: relative;
+}
+
+.profile-photo {
+  position: absolute;
+  left: 50%;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.hi5-content {
+  background-color: #BCBDC1;
+}
+
+
+::-webkit-input-placeholder {
+   color: white;
+}

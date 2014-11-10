@@ -3,18 +3,18 @@
   <div class="hi5-form">
     <div class="field">
       <%= f.label :hi5ive_Recipient %><br>
-      <%=f.text_field :to %><br>
+      <%=f.text_field :to, class: "form-styling" %><br>
     </div>
     <div class="field">
       <%= f.label :from %><br>
-      <%=f.text_field :from %><br>
+      <%=f.text_field :from, class: "form-styling"%><br>
     </div>
     <div class="field">
       <%= f.hidden_field(:phone)%>
     </div>
     <div class="field">
       <%= f.label :message %><br>
-      <%=f.text_field :message %><br>
+      <%=f.text_field :message, class: "form-styling", :placeholder => "message" %><br>
     </div>
     <div class="field">
     <%= f.hidden_field(:user_id, :value => @user_id) %>
