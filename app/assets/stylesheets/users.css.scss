@@ -380,7 +380,11 @@ input[name="commit"]:hover, #new-hi5-form:hover {
   padding-top: 4em;
 }
 
+a, .logo {
+  color: white;
+  font-size: 2em
+}
 
 ::-webkit-input-placeholder {
-   color: white;
+   color: gray;
 }

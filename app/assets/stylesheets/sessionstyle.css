@@ -342,7 +342,7 @@ body {
 }
 
 form {
-  padding-top: 15%;
+  padding-top: 5em;
 }
 .container {
   background: url('http://buzzagency.co.uk/home/images/blackboard.jpg') no-repeat center center fixed;
@@ -390,4 +390,5 @@ label{
 
 a {
   color: white;
+  font-size: 2em;
 }
