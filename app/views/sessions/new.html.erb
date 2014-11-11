@@ -3,32 +3,34 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Login Form</title>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <%= stylesheet_link_tag    'sessionstyle' %>
+
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <%= stylesheet_link_tag    'sessionstyle' %>
 </head>
   <body>
     <div class="container">
-
-      <div class="omb_login">
-        <div class="row omb_row-sm-offset-3">
-          <div class="col-xs-12 col-sm-6">
-            <div class="input-group">
-              <%= form_tag(session_path) do %>
-                <%= label_tag(:email) %><br/>
-                <%= text_field_tag(:email) %><br/>
-                <%= label_tag(:password) %><br/>
-                <%= password_field_tag(:password) %><br/>
-                <p class="submit"> <%= submit_tag('Login') %> </p>
-              <% end %>
-              <label class="checkbox">
-                <p>not currently a member? <%= link_to('Sign up', new_user_path) %></p>
-                <input type="checkbox" value="remember-me">Remember Me
-              </label>
+      <header class="heading">
+        <h1>Hi5ive</h1>
+      </header>
+          <div class="omb_login">
+            <div class="row omb_row-sm-offset-3">
+              <div class="col-xs-12 col-sm-6">
+                <div class="input-group">
+                  <%= form_tag(session_path) do %>
+                    <%= label_tag(:email) %><br/>
+                    <%= text_field_tag(:email) %><br/>
+                    <%= label_tag(:password) %><br/>
+                    <%= password_field_tag(:password) %><br/>
+                    <p class="submit"> <%= submit_tag('Login') %> </p>
+                  <% end %>
+                  <label class="checkbox">
+                    <p>not currently a member?&nbsp;&nbsp;&nbsp;<%= link_to('Sign up', new_user_path) %></p>
+                    <input type="checkbox" value="remember-me">Remember Me
+                  </label>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+           </div>
 
 
       <div id="box">

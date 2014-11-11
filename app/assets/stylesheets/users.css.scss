@@ -156,14 +156,16 @@ center, center *{ color: #ffffff !important; font-size:14pt; }
 
 
 
-div.container {
+div.top50 {
+  background: url('http://buzzagency.co.uk/home/images/blackboard.jpg') no-repeat center center fixed;
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   background-color: rgba(197, 219, 197, 0.73);
   opacity: 0.85;
-  padding-top: 50px;
+  padding-top: 5em;
   background-color: #FDFDFD;
 }
 
@@ -372,6 +374,10 @@ input[name="commit"]:hover, #new-hi5-form:hover {
 
 .hi5-content {
   background-color: #BCBDC1;
+}
+
+.main-container {
+  padding-top: 4em;
 }
 
 
