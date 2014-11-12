@@ -188,6 +188,10 @@ div.all-users {
   background-color: white;
 }
 
+.all-users:hover .main-heading {
+  color: black;
+}
+
 .all-users p {
   display: inline-block;
   padding-right: 10px;
@@ -208,7 +212,17 @@ div.hi-fives {
   padding-left: 2em;
   background-color: #1ebaa4;
   margin-top: 24px;
+  transition: background-color .5s ease;
 }
+
+.hi-fives:hover .main-heading {
+  color: black;
+}
+
+.hi-fives:hover {
+  background-color: white;
+}
+
 
 div#new-form {
   float: left;
@@ -387,6 +401,12 @@ input[name="commit"]:hover, #new-hi5-form:hover {
 a, .logo {
   color: white;
   font-size: 2em
+}
+
+.hi5s{
+  font-size: 2em;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 ::-webkit-input-placeholder {
