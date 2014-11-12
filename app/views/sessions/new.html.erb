@@ -14,7 +14,7 @@
       </header>
           <div class="omb_login">
             <div class="row omb_row-sm-offset-3">
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 col-sm-6 log-in-box">
                 <div class="input-group">
                   <%= form_tag(session_path) do %>
                     <%= label_tag(:email) %><br/>
@@ -25,7 +25,6 @@
                   <% end %>
                   <label class="checkbox">
                     <p>not currently a member?&nbsp;&nbsp;&nbsp;<%= link_to('Sign up', new_user_path) %></p>
-                    <input type="checkbox" value="remember-me">Remember Me
                   </label>
                 </div>
               </div>

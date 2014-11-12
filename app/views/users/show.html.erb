@@ -37,14 +37,15 @@
 
   <div class="row clearfix hi5-content">
     <div class="all-users">
-      <h1>WDI August - 2014</h1><button type="button" id="new-hi5-form">Send New Hi 5ive</button>
+      <h1 class="main-heading">WDI August - 2014</h1><button type="button" id="new-hi5-form">Send New Hi 5ive</button>
       <% @users.each do |user| %>
       <div class="user-buttons">
         <span>
           <p><%= user.name %></p>
-          <%#= link_to 'Send hi5', new_hifife_path + "?phone=" + user.phone.to_s ,  :class => "send-hi5"  %>
           <button type="button" class="btn btn-default btn-lg send-hi5" data-user-id="<%= user.id %>" data-user-phone="<%= user.phone %>" data-user-name="<%= user.name %>" data-my-name="<%= @user.name %>"><span class="glyphicon glyphicon-thumbs-up"></span></button>
-          Hi-5ives: <%= Hifive.where(phone: User.find_by(id: user.id).phone).length %>
+            <span>
+              Hi-5ives: <%= Hifive.where(phone: User.find_by(id: user.id).phone).length %>
+            </span>
         </span>
       </div>
       <% end %>
@@ -54,12 +55,15 @@
     </div>
 
       <div class="hi-fives">
-        <h1>Unique Hi 5s this Week: <%= @hifives.length %></h1>
+        <h1 class="main-heading">Unique Hi 5s this Week: <%= @hifives.length %></h1>
           <% @hifives.each do |hifive| %>
-            <span>
-            <h1><%= hifive.from %></h1>
-            <p><%= hifive.message %></p>
-            </span>
+            <div class="each-hi5">
+              <span>
+                <p class="hi5s">
+                  <%= hifive.from %> | <%= hifive.message %>
+                </p>
+              </span>
+            </div>
           <% end %>
       </div>
     </br>

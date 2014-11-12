@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Indie Flower', cursive;
 }
 
 article, aside, details, figcaption, figure,
@@ -391,4 +392,20 @@ label{
 a {
   color: white;
   font-size: 2em;
+}
+
+.main-heading {
+  font-size: 3em;
+  padding: 20px 0 15px 0;
+  text-align: center;
+  color: white;
+}
+
+.hi5s{
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+.log-in-box {
+  width: 23%;
 }

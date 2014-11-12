@@ -196,6 +196,8 @@ div.all-users {
 
 .all-users .user-buttons{
   margin-bottom: 10px;
+  float: left;
+  width: 49%;
 }
 
 div.hi-fives {
@@ -205,7 +207,7 @@ div.hi-fives {
   white-space: nowrap;
   padding-left: 2em;
   background-color: #1ebaa4;
-  margin-top: 27px;
+  margin-top: 24px;
 }
 
 div#new-form {
@@ -341,6 +343,7 @@ text-align: center;
 }
 #new-hi5-form{
   margin-bottom: 2em;
+  width: 100%;
 }
 
 
